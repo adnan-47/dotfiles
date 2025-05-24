@@ -12,7 +12,7 @@ in oder to achieve this look ypu have following thing
 
 ## What are we going to obtain 
 
-![Screenshot](img/setup.png)
+![Screenshot](setup.png)
 
 ---
 ### 1. Setup the terminal
