@@ -101,7 +101,4 @@ The script customizes quote/brace insertion and deletion for a more IDE-like exp
 
 ---
 
-## 🧩 Summary
-
-This PowerShell profile script transforms your terminal into a modern, efficient, and developer-friendly environment — combining aesthetics, productivity, and intelligence in one powerful configuration.
 
