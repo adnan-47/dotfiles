@@ -38,3 +38,13 @@ you can run it using `oh-my-posh.exe` in terminal
 
  Go to the  poweshell $PROFILE and edit the omp-profileconfig.ps1 file for invoke 
 . So the `oh-my-posh.exe` will run automatically 
+
+On windows the $PROFILE is in 
+
+```text
+C:\
+└── Users\
+    └── adnan\
+        └── Documents\
+            └── PowerShell\
+                └── 📄 Microsoft.PowerShell_profile.ps1  <-- Your $PROFILE
