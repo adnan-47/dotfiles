@@ -680,3 +680,22 @@ Set-PSReadLineKeyHandler -Key Ctrl+Shift+t `
     [Microsoft.PowerShell.PSConsoleReadLine]::Insert("dotnet test")
     [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
 }
+
+# clearing the history section 
+$historyPath = (Get-PSReadLineOption).HistorySavePath
+if (Test-Path $historyPath) {
+    Clear-Content $historyPath
+}
+[Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory()
+
+#manual nuke function
+function Clear-AllHistory {
+    $path = (Get-PSReadLineOption).HistorySavePath
+    if (Test-Path $path) { 
+        Clear-Content $path 
+    }
+    [Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory()
+    Write-Host "History wiped." -ForegroundColor Cyan
+}
+
+Set-Alias nuke Clear-AllHistory
