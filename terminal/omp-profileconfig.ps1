@@ -688,7 +688,7 @@ if (Test-Path $historyPath) {
 }
 [Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory()
 
-#manual nuke function
+#manual nuke function to delete the memory
 function Clear-AllHistory {
     $path = (Get-PSReadLineOption).HistorySavePath
     if (Test-Path $path) { 
